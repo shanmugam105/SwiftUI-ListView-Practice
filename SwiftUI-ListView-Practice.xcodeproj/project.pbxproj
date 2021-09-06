@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		040FA46E26E3430900DCF366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FA46D26E3430900DCF366 /* AppDelegate.swift */; };
 		040FA47026E3430900DCF366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FA46F26E3430900DCF366 /* SceneDelegate.swift */; };
-		040FA47226E3430900DCF366 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FA47126E3430900DCF366 /* ContentView.swift */; };
+		040FA47226E3430900DCF366 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FA47126E3430900DCF366 /* HomeContentView.swift */; };
 		040FA47426E3430D00DCF366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040FA47326E3430D00DCF366 /* Assets.xcassets */; };
 		040FA47726E3430D00DCF366 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040FA47626E3430D00DCF366 /* Preview Assets.xcassets */; };
 		040FA47A26E3430D00DCF366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040FA47826E3430D00DCF366 /* LaunchScreen.storyboard */; };
+		0474967426E4CD9000B7A2A7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474967326E4CD9000B7A2A7 /* Helper.swift */; };
+		0474967626E4D14400B7A2A7 /* StudentDetailsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474967526E4D14400B7A2A7 /* StudentDetailsContentView.swift */; };
+		04ED5A6126E5B3AC00D71A05 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED5A6026E5B3AC00D71A05 /* StudentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040FA46A26E3430900DCF366 /* SwiftUI-ListView-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ListView-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		040FA46D26E3430900DCF366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040FA46F26E3430900DCF366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		040FA47126E3430900DCF366 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		040FA47126E3430900DCF366 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		040FA47326E3430D00DCF366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040FA47626E3430D00DCF366 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		040FA47926E3430D00DCF366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040FA47B26E3430D00DCF366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0474967326E4CD9000B7A2A7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0474967526E4D14400B7A2A7 /* StudentDetailsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsContentView.swift; sourceTree = "<group>"; };
+		04ED5A6026E5B3AC00D71A05 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,12 @@
 		040FA46C26E3430900DCF366 /* SwiftUI-ListView-Practice */ = {
 			isa = PBXGroup;
 			children = (
-				040FA46D26E3430900DCF366 /* AppDelegate.swift */,
-				040FA46F26E3430900DCF366 /* SceneDelegate.swift */,
-				040FA47126E3430900DCF366 /* ContentView.swift */,
-				040FA47326E3430D00DCF366 /* Assets.xcassets */,
-				040FA47826E3430D00DCF366 /* LaunchScreen.storyboard */,
-				040FA47B26E3430D00DCF366 /* Info.plist */,
+				040FA48126E3439F00DCF366 /* Delegate */,
+				040FA47126E3430900DCF366 /* HomeContentView.swift */,
+				0474967526E4D14400B7A2A7 /* StudentDetailsContentView.swift */,
+				040FA48226E343C100DCF366 /* Global */,
 				040FA47526E3430D00DCF366 /* Preview Content */,
+				04ED5A6026E5B3AC00D71A05 /* StudentModel.swift */,
 			);
 			path = "SwiftUI-ListView-Practice";
 			sourceTree = "<group>";
@@ -73,6 +78,26 @@
 				040FA47626E3430D00DCF366 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		040FA48126E3439F00DCF366 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				040FA46D26E3430900DCF366 /* AppDelegate.swift */,
+				040FA46F26E3430900DCF366 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		040FA48226E343C100DCF366 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				040FA47326E3430D00DCF366 /* Assets.xcassets */,
+				040FA47826E3430D00DCF366 /* LaunchScreen.storyboard */,
+				040FA47B26E3430D00DCF366 /* Info.plist */,
+				0474967326E4CD9000B7A2A7 /* Helper.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0474967626E4D14400B7A2A7 /* StudentDetailsContentView.swift in Sources */,
+				04ED5A6126E5B3AC00D71A05 /* StudentModel.swift in Sources */,
 				040FA46E26E3430900DCF366 /* AppDelegate.swift in Sources */,
 				040FA47026E3430900DCF366 /* SceneDelegate.swift in Sources */,
-				040FA47226E3430900DCF366 /* ContentView.swift in Sources */,
+				040FA47226E3430900DCF366 /* HomeContentView.swift in Sources */,
+				0474967426E4CD9000B7A2A7 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +317,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ListView-Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI-ListView-Practice/Info.plist";
+				INFOPLIST_FILE = "SwiftUI-ListView-Practice/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.SwiftUI-ListView-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +338,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-ListView-Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI-ListView-Practice/Info.plist";
+				INFOPLIST_FILE = "SwiftUI-ListView-Practice/Global/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sparkout-Tech-Solution.SwiftUI-ListView-Practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
